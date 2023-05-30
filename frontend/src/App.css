@@ -1,3 +1,7 @@
+body {
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+}
+
 .navbar {
     --bs-navbar-brand-color: rgba(255, 255, 255, 0.95);
     --bs-navbar-brand-hover-color: rgba(255, 255, 255, 0.95);
@@ -12,4 +16,85 @@
 
 .cartBtn:hover {
     color: rgba(255, 255, 255, 0.7);
+}
+
+.card {
+    border-radius: 3%;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.itemCarousel {
+    .carousel-inner {
+        height: 100%;
+    }
+
+    .carousel-indicators {
+        bottom: -40px;
+    }
+
+    .carousel-control-prev {
+        left: -6%;
+    }
+
+    .carousel-control-next {
+        right: -6%;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+.closeIcon {
+    opacity: 0.3;
+}
+
+.closeIcon:hover {
+    opacity: 0.7;
+}
+
+.cart-minus-btn {
+    border: none;
+    background-color: inherit;
+    transform: translate(0, -2px);
+    margin-left: 100px;
+    margin-right: 8px;
+}
+
+.cart-plus-btn {
+    border: none;
+    background-color: inherit;
+    margin-left: 8px;
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.spinner {
+    width: 120px;
+    height: 120px;
+}
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: rgba(50, 50, 50, 1);
+    background-color: rgba(200, 200, 200, 1);
 }

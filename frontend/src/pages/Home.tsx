@@ -1,3 +1,3 @@
 export function Home() {
-    return <h1>首頁</h1>
+    return <h1>主頁</h1>
 }
